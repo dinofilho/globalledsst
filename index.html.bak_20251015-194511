@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GLOBALLED SST — Gestão em Saúde e Segurança do Trabalho</title>
+<meta name="description" content="eSocial, PGR, PCMSO, LTCAT, PPP e exames ocupacionais.">
+<style>
+:root{--pri:#0e7a66;--pri-2:#0b6b5a;--bg:#f5f7f8}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#222}
+.container{max-width:1060px;margin:auto;padding:20px}
+header{background:var(--pri);color:#fff}
+header .container{display:flex;justify-content:space-between;align-items:center;gap:14px}
+h1{font-size:24px;margin:0}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;border:0;cursor:pointer}
+.btn-wa{background:#25D366;color:#fff;font-weight:600}
+.badge{background:#fff2;border-radius:8px;padding:6px 10px;margin-left:10px}
+.section{padding:24px 0}
+.card{background:#fff;border:1px solid #e7ecef;border-radius:14px;padding:16px}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:1fr 1fr}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gallery a{display:block;border-radius:12px;overflow:hidden;background:#fff;border:1px solid #e7ecef}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+footer{background:#0f172a;color:#e6edf3;padding:18px;font-size:14px}
+small{opacity:.8}
+@media(max-width:720px){header .container{flex-direction:column;align-items:flex-start}.grid-2{grid-template-columns:1fr}}
+</style>
+</head><body>
+
+<header>
+  <div class="container">
+    <div>
+      <h1>GLOBALLED SST</h1>
+      <div class="badge">Gestão em Saúde e Segurança do Trabalho</div>
+    </div>
+    <a class="btn btn-wa" href="https://wa.me/55149933224141" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section grid grid-2">
+    <div class="card">
+      <h2>Serviços</h2>
+      <p>Transmissão para o <strong>eSocial</strong> (S-2210, S-2220, S-2240), elaboração de <strong>PGR</strong>, <strong>PCMSO</strong>, <strong>LTCAT</strong>, <strong>PPP</strong> e gestão de exames ocupacionais.</p>
+      <p><strong>Endereço:</strong> Rua dos Expedicionários, 195 – Ourinhos/SP<br>
+      <strong>Contato:</strong> (14) 3322-4141 | WhatsApp: (14) 9 3322-4141</p>
+    </div>
+    <div class="card">
+      <h2>Estrutura e Fotos</h2>
+      <p>Alguns registros da nossa estrutura, equipamentos e materiais.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="gallery">
+      <a href="img/dinoli.jpg" target="_blank" rel="noopener"><img src="img/dinoli.jpg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/foto1.jpg" target="_blank" rel="noopener"><img src="img/foto1.jpg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/foto2.jpg" target="_blank" rel="noopener"><img src="img/foto2.jpg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/foto3.jpg" target="_blank" rel="noopener"><img src="img/foto3.jpg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/foto4.jpg" target="_blank" rel="noopener"><img src="img/foto4.jpg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/ftdi.jpg" target="_blank" rel="noopener"><img src="img/ftdi.jpg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/Termo_de_Titularidade.jpeg" target="_blank" rel="noopener"><img src="img/Termo_de_Titularidade.jpeg" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/172.16.32.1_1471_.png" target="_blank" rel="noopener"><img src="img/172.16.32.1_1471_.png" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/Acordar_para_o_Mundo_Digital.png" target="_blank" rel="noopener"><img src="img/Acordar_para_o_Mundo_Digital.png" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/logo.png" target="_blank" rel="noopener"><img src="img/logo.png" alt="Imagem - GLOBALLED SST"></a>
+      <a href="img/qrcode_open.spotify.com.png" target="_blank" rel="noopener"><img src="img/qrcode_open.spotify.com.png" alt="Imagem - GLOBALLED SST"></a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container">
+  <small>© 2025 GLOBALLED SST — Todos os direitos reservados.</small>
+</div></footer>
+
+</body></html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLOBALLED SST — Gestão em Saúde e Segurança do Trabalho</title>
+  <meta name="description" content="Transmissão para o eSocial (S-2210, S-2220, S-2240), elaboração de PGR, PCMSO, LTCAT, PPP e gestão de exames ocupacionais." />
+  <link rel="preload" as="image" href="img/logo.png">
+  <style>
+    :root{
+      --green:#1aa36d;
+      --green-2:#0f7f54;
+      --bg:#f6f8fa;
+      --text:#222;
+      --muted:#64748b;
+      --card:#ffffff;
+      --radius:16px;
+      --shadow:0 6px 20px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    a{color:var(--green);text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header */
+    header{
+      background:linear-gradient(120deg,var(--green),var(--green-2));
+      color:#fff;
+      position:sticky;top:0;z-index:5;
+      box-shadow:var(--shadow);
+    }
+    .brand{display:flex;align-items:center;gap:16px;padding:18px 0}
+    .brand img{width:56px;height:56px;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25));animation:pop .7s ease both}
+    .brand h1{margin:0;font-size:clamp(18px,2.6vw,28px);letter-spacing:.5px}
+    .brand small{display:block;color:#e6fff5;font-weight:500}
+
+    @keyframes pop{from{transform:scale(.9);opacity:.2}to{transform:scale(1);opacity:1}}
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;
+      padding:28px 0;
+    }
+    .card{
+      background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:22px;
+    }
+    h2{margin:0 0 10px;font-size:clamp(20px,2.4vw,28px)}
+    .muted{color:var(--muted)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      background:var(--green);color:#fff;padding:12px 18px;border-radius:999px;
+      font-weight:700;border:0;box-shadow:var(--shadow);transition:.2s transform;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .whats{position:sticky;bottom:22px;float:right}
+
+    /* Galeria */
+    .grid{
+      display:grid;gap:18px;
+      grid-template-columns:repeat(12,1fr);
+    }
+    .grid .item{grid-column:span 4;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .grid .item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .25s ease}
+    .grid .item:hover img{transform:scale(1.03)}
+    .grid .cap{padding:12px 14px;color:var(--muted);font-size:14px}
+
+    /* Rodapé */
+    footer{
+      margin:34px 0 0;background:#0f172a;color:#cbd5e1;padding:22px 0;
+    }
+    footer a{color:#9fe6c6}
+    .foot{display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .qr{display:flex;align-items:center;gap:12px}
+    .qr img{width:72px;height:72px;border-radius:8px;background:#fff}
+
+    /* Responsivo */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid .item{grid-column:span 6}
+      .whats{position:static;float:none}
+    }
+    @media (max-width:560px){
+      .grid .item{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <img src="img/logo.png" alt="Logo GLOBALLED SST">
+        <h1>GLOBALLED SST <small>Gestão em Saúde e Segurança do Trabalho</small></h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h2>Serviços</h2>
+        <p class="muted">
+          Transmissão para o <strong>eSocial</strong> (S-2210, S-2220, S-2240), elaboração de
+          <strong>PGR, PCMSO, LTCAT, PPP</strong> e gestão de exames ocupacionais.
+        </p>
+        <p><strong>Endereço:</strong> Rua dos Expedicionários, 195 — Ourinhos/SP<br>
+           <strong>Contato:</strong> (14) 3322-4141 &nbsp;|&nbsp; WhatsApp: <a href="https://wa.me/5514981533769" target="_blank" rel="noopener">(14) 98153-3769</a>
+        </p>
+        <a class="btn" href="https://wa.me/5514981533769?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20GLOBALLED%20SST." target="_blank" rel="noopener">📲 Chamar no WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <h2>Estrutura e Fotos</h2>
+        <p class="muted">Alguns registros da nossa estrutura, equipamentos e materiais.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <figure class="item"><img src="img/foto1.jpg" alt="Recepção e equipe"><figcaption class="cap">Recepção / atendimento</figcaption></figure>
+      <figure class="item"><img src="img/foto2.jpg" alt="Atendimento técnico"><figcaption class="cap">Atendimento técnico</figcaption></figure>
+      <figure class="item"><img src="img/foto3.jpg" alt="Infraestrutura"><figcaption class="cap">Infraestrutura</figcaption></figure>
+      <figure class="item"><img src="img/foto4.jpg" alt="Equipamentos e EPI"><figcaption class="cap">Equipamentos e EPI</figcaption></figure>
+      <figure class="item"><img src="img/dinoli.jpg" alt="Registro interno"><figcaption class="cap">Registro interno</figcaption></figure>
+      <figure class="item"><img src="img/ftdi.jpg" alt="Documento/termo"><figcaption class="cap">Documentação pronta</figcaption></figure>
+    </section>
+
+    <p class="whats">
+      <a class="btn" href="https://wa.me/5514981533769?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20GLOBALLED%20SST." target="_blank" rel="noopener">💬 Falar pelo WhatsApp</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        © 2025 GLOBALLED SST — Todos os direitos reservados ·
+        <a href="mailto:impactomsn@gmail.com">impactomsn@gmail.com</a>
+      </div>
+      <div class="qr">
+        <img src="img/qrcode_open_spotify.com.png" alt="QR code">
+        <small>Escaneie o QR para abrir nossa mídia.</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

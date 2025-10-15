@@ -1,192 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GLOBALLED SST — Gestão em Saúde e Segurança do Trabalho</title>
-  <meta name="description" content="Transmissão para o eSocial (S-2210, S-2220, S-2240), elaboração de PGR, PCMSO, LTCAT, PPP e gestão de exames ocupacionais." />
-  <link rel="preload" as="image" href="img/logo.png">
-  <style>
-    :root{
-      --green:#1aa36d; --green-2:#0f7f54; --bg:#f6f8fa; --text:#222;
-      --muted:#64748b; --card:#ffffff; --radius:16px; --shadow:0 6px 20px rgba(0,0,0,.08);
-    }
-    *{box-sizing:border-box} body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
-    a{color:var(--green);text-decoration:none}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    header{background:linear-gradient(120deg,var(--green),var(--green-2));color:#fff;position:sticky;top:0;z-index:5;box-shadow:var(--shadow)}
-    .brand{display:flex;align-items:center;gap:16px;padding:18px 0}
-    .brand img{width:56px;height:56px;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    .brand h1{margin:0;font-size:clamp(18px,2.6vw,28px);letter-spacing:.5px}
-    .brand small{display:block;color:#e6fff5;font-weight:500}
-    .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;padding:28px 0}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
-    h2{margin:0 0 10px;font-size:clamp(20px,2.4vw,28px)} .muted{color:var(--muted)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;border:0;box-shadow:var(--shadow);transition:.2s}
-    .btn:hover{transform:translateY(-1px)} .whats{position:sticky;bottom:22px;float:right}
-    .grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
-    .grid .item{grid-column:span 4;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-    .grid .item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .25s ease}
-    .grid .item:hover img{transform:scale(1.03)} .grid .cap{padding:12px 14px;color:var(--muted);font-size:14px}
-    /* Contato */
-    .contact{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
-    form{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    label{font-weight:600;font-size:14px;margin:8px 0 6px;display:block}
-    input,textarea{width:100%;padding:12px 12px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;font:inherit}
-    textarea{min-height:130px;resize:vertical}
-    .help{font-size:12px;color:var(--muted)}
-    .ok{display:none;margin-top:10px;padding:10px 12px;border-radius:10px;background:#e8f9f1;color:#065f46;font-weight:600}
-    .err{display:none;margin-top:10px;padding:10px 12px;border-radius:10px;background:#fee2e2;color:#991b1b;font-weight:600}
-    .map{border:0;width:100%;height:100%;min-height:360px;border-radius:var(--radius);box-shadow:var(--shadow)}
-    footer{margin:34px 0 0;background:#0f172a;color:#cbd5e1;padding:22px 0}
-    footer a{color:#9fe6c6}
-    .foot{display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
-    .qr{display:flex;align-items:center;gap:12px}
-    .qr img{width:72px;height:72px;border-radius:8px;background:#fff}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid .item{grid-column:span 6}.contact{grid-template-columns:1fr}.row{grid-template-columns:1fr}.whats{position:static;float:none}}
-    @media (max-width:560px){.grid .item{grid-column:span 12}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GLOBALLED SST — Gestão em Saúde e Segurança do Trabalho</title>
+<meta name="description" content="eSocial, PGR, PCMSO, LTCAT, PPP e exames ocupacionais em Ourinhos/SP.">
+<style>
+  :root{
+    --verde:#19b79a;
+    --fundo:#e9f6f3;
+    --escuro:#0f2f2b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#1f2937}
+  header{background:var(--verde);color:#fff;padding:22px 16px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 14px}
+  .topo{display:flex;gap:14px;align-items:center}
+  .logo{width:86px;height:86px;border-radius:18px;background:#263238;display:grid;place-items:center;overflow:hidden}
+  .logo img{width:86%;height:auto;display:block}
+  h1{margin:0;font-size:clamp(20px,3.8vw,30px);font-weight:800;letter-spacing:.3px}
+  .sub{opacity:.9;margin-top:2px}
+  .cta{margin-top:10px}
+  .whats{display:inline-block;background:#fff;color:#0a6b5e;text-decoration:none;
+         padding:10px 14px;border-radius:999px;font-weight:700;border:2px solid #0a6b5e}
+  main{padding:24px 0}
+  .hero{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:18px}
+  .hero video{max-width:420px;width:100%;border-radius:16px;display:block;background:#000}
+  @media(min-width:760px){.hero{grid-template-columns:auto 1fr;align-items:center}}
+  .card{background:var(--fundo);border:1px solid #cfeee8;padding:14px;border-radius:14px}
+  h2{font-size:clamp(18px,3.2vw,26px);margin:0 0 10px 0;color:var(--escuro)}
+  .grid{display:grid;gap:14px}
+  @media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
+  .gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb;display:block}
+  footer{margin-top:28px;background:#0f2f2b;color:#bdebe3;padding:16px 0;font-size:14px}
+  .mapa{border:0;width:100%;height:340px;border-radius:14px}
+  .muted{opacity:.85}
+</style>
 </head>
 <body>
-
-  <header>
-<section id="servicos" style="max-width:1120px;margin:18px auto 24px auto;">
-  <h2 style="margin:0 0 8px 0;">Serviços</h2>
-  <p style="margin:0 0 6px 0;">Transmissão para <strong>eSocial</strong> (S2210, S2220, S2240), elaboração de <strong>PGR, PCMSO, LTCAT, PPP</strong> e gestão de exames ocupacionais.</p>
-  <p style="margin:0 0 6px 0;"><strong>Endereço:</strong> Rua dos Expedicionários, 195 — Ourinhos/SP</p>
-  <p style="margin:0"><strong>Contato:</strong> (14) 3322-4141 | WhatsApp</p>
-</section>
-<div style="text-align:center;margin:20px 0;"><video autoplay muted loop playsinline poster="img/hero.jpg" style="width:100%;max-width:480px;border-radius:12px"><source src="img/hero.webm" type="video/webm"><source src="img/hero.mp4" type="video/mp4"></video></div>
-    <div class="wrap">
-      <div class="brand">
-        <img src="img/logo.png" alt="Logo GLOBALLED SST">
-        <h1>GLOBALLED SST <small>Gestão em Saúde e Segurança do Trabalho</small></h1>
-      </div>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <div class="card">
-        <h2>Serviços</h2>
-        <p class="muted">
-          Transmissão para o <strong>eSocial</strong> (S-2210, S-2220, S-2240), elaboração de
-          <strong>PGR, PCMSO, LTCAT, PPP</strong> e gestão de exames ocupacionais.
-        </p>
-        <p><strong>Endereço:</strong> Rua dos Expedicionários, 195 — Ourinhos/SP<br>
-           <strong>Contato:</strong> (14) 3322-4141 &nbsp;|&nbsp; WhatsApp: <a href="https://wa.me/551433224141" target="_blank" rel="noopener">(14) 98153-3769</a>
-        </p>
-        <a class="btn" href="https://wa.me/5514981533769?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20GLOBALLED%20SST." target="_blank" rel="noopener">📲 Chamar no WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h2>Estrutura e Fotos</h2>
-        <p class="muted">Alguns registros da nossa estrutura, equipamentos e materiais.</p>
-      </div>
-    </section>
-
-    <section class="grid">
-      <figure class="item"><img src="img/foto1.jpg" alt="Recepção e equipe"><figcaption class="cap">Recepção / atendimento</figcaption></figure>
-      <figure class="item"><img src="img/foto2.jpg" alt="Atendimento técnico"><figcaption class="cap">Atendimento técnico</figcaption></figure>
-      <figure class="item"><img src="img/foto3.jpg" alt="Infraestrutura"><figcaption class="cap">Infraestrutura</figcaption></figure>
-      <figure class="item"><img src="img/foto4.jpg" alt="Equipamentos e EPI"><figcaption class="cap">Equipamentos e EPI</figcaption></figure>
-      <figure class="item"><img src="img/dinoli.jpg" alt="Registro interno"><figcaption class="cap">Registro interno</figcaption></figure>
-      <figure class="item"><img src="img/ftdi.jpg" alt="Documento/termo"><figcaption class="cap">Documentação pronta</figcaption></figure>
-    </section>
-
-    <!-- CONTATO + MAPA -->
-    <section class="contact" id="contato">
-      <form id="formContato" class="card">
-        <h2>Fale com a GLOBALLED SST</h2>
-        <p class="muted">Preencha o formulário e retornamos rapidamente.</p>
-
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome" autocomplete="name" required>
-
-        <div class="row">
-          <div>
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div>
-            <label for="fone">Telefone</label>
-            <input id="fone" name="telefone" type="tel" inputmode="tel" placeholder="(14) 9 0000-0000">
-          </div>
-        </div>
-
-        <label for="msg">Mensagem</label>
-        <textarea id="msg" name="mensagem" required></textarea>
-
-        <p class="help">Ao enviar, você concorda com o uso dos dados para contato comercial.</p>
-        <button class="btn" type="submit">✉️ Enviar mensagem</button>
-        <div class="ok" id="okMsg">Mensagem enviada. Obrigado! ✅</div>
-        <div class="err" id="errMsg">Não foi possível enviar. Tente novamente. ❌</div>
-
-        <!-- IMPORTANTE: troque o valor abaixo pelo SEU endpoint do Formspree -->
-        <input type="hidden" id="formEndpoint" value="https://formspree.io/f/SEU_ID_AQUI">
-      </form>
-
-      <div class="card" style="padding:0">
-        <iframe class="map"
-          src="https://www.google.com/maps?q=Rua%20dos%20Expedicion%C3%A1rios%2C%20195%2C%20Ourinhos%2C%20SP&output=embed"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa — GLOBALLED SST"></iframe>
-      </div>
-    </section>
-
-    <p class="whats">
-      <a class="btn" href="https://wa.me/5514981533769?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20GLOBALLED%20SST." target="_blank" rel="noopener">💬 Falar pelo WhatsApp</a>
-    </p>
-  </main>
-
-  <footer>
-    <div class="wrap foot">
+<header>
+  <div class="wrap">
+    <div class="topo">
+      <div class="logo"><img src="img/logo.png" alt="GLOBALLED SST"></div>
       <div>
-        © 2025 GLOBALLED SST — Todos os direitos reservados ·
-        <a href="mailto:impactomsn@gmail.com">impactomsn@gmail.com</a>
-      </div>
-      <div class="qr">
-        <img src="img/qrcode_open_spotify.com.png" alt="QR code">
-        <small>Escaneie o QR para abrir nossa mídia.</small>
+        <h1>GLOBALLED SST</h1>
+        <div class="sub">Gestão em Saúde e Segurança do Trabalho • Ourinhos/SP</div>
+        <div class="cta">
+          <a class="whats" href="https://wa.me/551433224141" target="_blank" rel="noopener">WhatsApp (14) 3322-4141</a>
+        </div>
       </div>
     </div>
-  </footer>
-<section id="mapa-local" style="max-width:1120px;margin:16px auto;">
-  <h2 style="margin:0 0 8px 0;">Como chegar</h2>
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
-    <iframe src="https://www.google.com/maps?q=Rua%20dos%20Expedicion%C3%A1rios%2C%20195%2C%20Ourinhos%20SP&output=embed"
-      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-</section>
+</header>
 
-  <script>
-    // Envio assíncrono via Formspree (fica na mesma página)
-    const form = document.getElementById('formContato');
-    const ok = document.getElementById('okMsg');
-    const err = document.getElementById('errMsg');
-    const endpoint = document.getElementById('formEndpoint').value;
+<main class="wrap">
+  <!-- VÍDEO + SERVIÇOS -->
+  <section class="hero">
+    <video src="img/hero.webm" autoplay muted loop playsinline></video>
+    <div class="card">
+      <h2>Serviços</h2>
+      Transmissão para o <b>eSocial</b> (S-2210, S-2220, S-2240), elaboração de <b>PGR</b>, <b>PCMSO</b>, <b>LTCAT</b>, <b>PPP</b> e gestão de exames ocupacionais.
+      <p class="muted"><b>Endereço:</b> Rua dos Expedicionários, 195 — Ourinhos/SP<br>
+      <b>Contato:</b> (14) 3322-4141 (WhatsApp)</p>
+    </div>
+  </section>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      ok.style.display = 'none'; err.style.display = 'none';
-      const data = Object.fromEntries(new FormData(form).entries());
-      try{
-        const r = await fetch(endpoint, {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(form)
-        });
-        if(r.ok){ form.reset(); ok.style.display='block'; }
-        else{ err.style.display='block'; }
-      }catch(_){ err.style.display='block'; }
-    });
-  </script>
+  <!-- GALERIA (3 FOTOS) -->
+  <section>
+    <h2>Estrutura e Fotos</h2>
+    <div class="grid gal">
+      <img src="img/foto1.jpg" alt="Estrutura 1">
+      <img src="img/foto2.jpg" alt="Estrutura 2">
+      <img src="img/foto3.jpg" alt="Estrutura 3">
+    </div>
+  </section>
 
-<a id="btn-whats-fixed" href="https://wa.me/551433224141" target="_blank" rel="noopener"
-   style="position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff; padding:12px 16px;
-   border-radius:999px; box-shadow:0 8px 14px rgba(0,0,0,.18); text-decoration:none; font-weight:600;">
-  WhatsApp
-</a>
+  <!-- MAPA -->
+  <section style="margin-top:18px">
+    <h2>Como chegar</h2>
+    <iframe class="mapa"
+      src="https://www.google.com/maps?q=Rua%20dos%20Expedicion%C3%A1rios%2C%20195%20-%20Ourinhos%2FSP&output=embed"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2025 GLOBALLED SST — Todos os direitos reservados</div>
+</footer>
 </body>
 </html>
