@@ -258,7 +258,13 @@
       "PGR atualizado: " + pgr + "%0A" +
       "PCMSO atualizado: " + pcmso;
 
-    window.open("https://wa.me/551433224141?text=" + mensagem, "_blank");
+    let numeroDestino = "551433224141"; // seu número principal
+
+if (servico === "Exames ocupacionais") {
+  numeroDestino = "55DDDNUMEROSECRETARIA"; // número da secretária
+}
+
+window.open("https://wa.me/" + numeroDestino + "?text=" + mensagem, "_blank");
   }
 </script><section>
     <h2>Estrutura e Fotos</h2>
