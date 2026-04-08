@@ -7,27 +7,40 @@
 <meta name="description" content="eSocial, PGR, PCMSO, LTCAT, PPP e exames ocupacionais em Ourinhos/SP.">
 <style>
   :root{ --verde:#19b79a; --fundo:#e9f6f3; --escuro:#0f2f2b; }
-  *{box-sizing:border-box} body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;background:#fff}
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:#1f2937;
+    background:#fff
+  }
   header{background:var(--verde);color:#fff;padding:14px 0}
   .wrap{max-width:980px;margin:0 auto;padding:0 14px}
   .topo{display:flex;gap:12px;align-items:center}
-  .logo{width:64px;height:64px;border-radius:14px;background:#263238;display:grid;place-items:center;overflow:hidden}
+  .logo{
+    width:64px;height:64px;border-radius:14px;background:#263238;
+    display:grid;place-items:center;overflow:hidden
+  }
   .logo img{width:86%;height:auto;display:block}
   h1{margin:0;font-size:clamp(18px,3.5vw,26px);font-weight:800;letter-spacing:.2px}
   .sub{opacity:.9;margin-top:2px}
   .cta{margin-top:8px}
-  .whats{display:inline-block;background:#fff;color:#0a6b5e;text-decoration:none;padding:8px 12px;border-radius:999px;
-         font-weight:700;border:2px solid #0a6b5e}
+  .whats{
+    display:inline-block;background:#fff;color:#0a6b5e;text-decoration:none;
+    padding:8px 12px;border-radius:999px;font-weight:700;border:2px solid #0a6b5e
+  }
   main{padding:18px 0}
   h2{font-size:clamp(18px,3.2vw,24px);margin:0 0 10px 0;color:var(--escuro)}
   .card{background:var(--fundo);border:1px solid #cfeee8;padding:12px;border-radius:12px;margin-bottom:14px}
   .grid{display:grid;gap:12px}
   @media(min-width:760px){ .grid3{grid-template-columns:repeat(3,1fr)} }
-  .gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb;display:block}
+  .gal img{
+    width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;
+    border:1px solid #e5e7eb;display:block
+  }
   .mapa{border:0;width:100%;height:320px;border-radius:12px}
   footer{margin-top:22px;background:#0f2f2b;color:#bdebe3;padding:14px 0;font-size:14px}
 
-  /* VÍDEO NO CANTO SUPERIOR DIREITO */
   .corner{
     position:fixed; right:10px; top:10px; width:180px; height:auto; z-index:1000;
     border-radius:12px; overflow:hidden; box-shadow:0 8px 22px rgba(0,0,0,.25); background:#000;
@@ -40,7 +53,6 @@
 </head>
 <body>
 
-<!-- vídeo pequeno no canto -->
 <div class="corner" aria-hidden="true">
   <video src="img/hero.webm" autoplay muted loop playsinline></video>
 </div>
@@ -52,20 +64,24 @@
       <div>
         <h1>GLOBALLED SST</h1>
         <div class="sub">Gestão em Saúde e Segurança do Trabalho • Ourinhos/SP</div>
-        <div class="cta"><a class="whats" href="https://wa.me/551433224141" target="_blank" rel="noopener">WhatsApp (14) 3322-4141</a></div>
+        <div class="cta">
+          <a class="whats" href="https://wa.me/551433224141" target="_blank" rel="noopener">
+            WhatsApp (14) 3322-4141
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </header>
+
 <section style="background:linear-gradient(135deg,#0f2f2b,#145c54); padding:20px 14px;">
   <div style="max-width:980px; margin:auto; text-align:center; color:#fff;">
-
-    <h2 style="margin:0; font-size:clamp(20px,4vw,28px); font-weight:800;">
+    <h2 style="margin:0; font-size:clamp(20px,4vw,28px); font-weight:800; color:#fff;">
       Atendimento em Ourinhos e em todo o Brasil 🇧🇷
     </h2>
 
     <p style="margin-top:10px; font-size:16px; line-height:1.6; color:#d1f5ef;">
-      Parcerias com Profissionais e Empresas Especializadas, garantindo suporte técnico completo onde você estiver.
+      Atendemos empresas em Ourinhos e região, com atuação em todo o território nacional por meio de parcerias com profissionais e empresas especializadas, garantindo suporte técnico completo onde você estiver.
     </p>
 
     <a href="https://wa.me/551433224141?text=Olá%2C%20vim%20pelo%20site%20da%20Globalled%20SST%20e%20quero%20atendimento."
@@ -73,7 +89,6 @@
        style="display:inline-block; margin-top:14px; background:#00ffcc; color:#00332e; padding:12px 18px; border-radius:999px; font-weight:bold; text-decoration:none;">
        Falar com especialista
     </a>
-
   </div>
 </section>
 
@@ -81,17 +96,18 @@
   <section class="card">
     <p>A <strong>GLOBALLED SST</strong> oferece uma gestão completa em Saúde e Segurança do Trabalho, com foco na conformidade legal, prevenção de riscos e bem-estar dos colaboradores.</p>
 
-<ul>
-  <li>📤 <strong>Transmissão para o eSocial</strong> (S-2210, S-2220 e S-2240) com conferência e rastreabilidade técnica.</li>
-  <li>📋 <strong>Elaboração, revisão e atualização</strong> de PGR, PCMSO, LTCAT e PPP.</li>
-  <li>🩺 <strong>Gestão de exames ocupacionais</strong>: Admissional, Periódico, Retorno, Mudança de Função e Demissional.</li>
-  <li>🏗️ <strong>Implantação e ampliação de SESMT</strong> conforme <strong>NR-4</strong>, incluindo dimensionamento, elaboração e acompanhamento técnico.</li>
-  <li>⚙️ <strong>Consultoria técnica em NRs</strong> e suporte completo na adequação às normas do Ministério do Trabalho.</li>
-  <li>🎓 <strong>Treinamentos e capacitações</strong> (NR-6, NR-33, NR-35 e outros), com práticas reais e equipamentos homologados.</li>
-</ul>
+    <ul>
+      <li>📤 <strong>Transmissão para o eSocial</strong> (S-2210, S-2220 e S-2240) com conferência e rastreabilidade técnica.</li>
+      <li>📋 <strong>Elaboração, revisão e atualização</strong> de PGR, PCMSO, LTCAT e PPP.</li>
+      <li>🩺 <strong>Gestão de exames ocupacionais</strong>: Admissional, Periódico, Retorno, Mudança de Função e Demissional.</li>
+      <li>🏗️ <strong>Implantação e ampliação de SESMT</strong> conforme <strong>NR-4</strong>, incluindo dimensionamento, elaboração e acompanhamento técnico.</li>
+      <li>⚙️ <strong>Consultoria técnica em NRs</strong> e suporte completo na adequação às normas do Ministério do Trabalho.</li>
+      <li>🎓 <strong>Treinamentos e capacitações</strong> (NR-6, NR-33, NR-35 e outros), com práticas reais e equipamentos homologados.</li>
+    </ul>
 
-<p>Atendimento especializado em todo o Brasil, com engenharia, medicina e segurança do trabalho integradas — oferecendo soluções que unem tecnologia, conformidade e prevenção.</p>
+    <p>Atendimento especializado em todo o Brasil, com engenharia, medicina e segurança do trabalho integradas — oferecendo soluções que unem tecnologia, conformidade e prevenção.</p>
 
+    <p>
       <b>Endereço:</b> Rua dos Expedicionários, 195 — Ourinhos/SP ·
       <b>Contato:</b> (14) 3322-4141 (WhatsApp)
     </p>
@@ -99,174 +115,178 @@
 
   <section style="max-width:1100px; margin:30px auto; padding:20px;">
 
-  <!-- SERVIÇOS -->
-  <div style="background:linear-gradient(135deg,#0b1f1f,#123535); border:1px solid #1d5c5c; border-radius:22px; padding:25px; margin-bottom:25px; box-shadow:0 0 20px rgba(0,0,0,0.25);">
-    <h2 style="color:#ffffff; font-size:32px; margin-bottom:10px;">Serviços em Destaque</h2>
-    <p style="color:#cfeeee; font-size:18px; line-height:1.6; margin-bottom:25px;">
-      Atendimento técnico especializado para empresas que precisam de organização, conformidade legal e suporte completo em Saúde e Segurança do Trabalho.
-    </p>
+    <div style="background:linear-gradient(135deg,#0b1f1f,#123535); border:1px solid #1d5c5c; border-radius:22px; padding:25px; margin-bottom:25px; box-shadow:0 0 20px rgba(0,0,0,0.25);">
+      <h2 style="color:#ffffff; font-size:32px; margin-bottom:10px;">Serviços em Destaque</h2>
+      <p style="color:#cfeeee; font-size:18px; line-height:1.6; margin-bottom:25px;">
+        Atendimento técnico especializado para empresas que precisam de organização, conformidade legal e suporte completo em Saúde e Segurança do Trabalho.
+      </p>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px;">
-      <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
-        <h3 style="color:#00ffd0; margin-bottom:8px;">eSocial SST</h3>
-        <p style="color:#ffffff; line-height:1.5;">Envio, conferência e acompanhamento técnico dos eventos S-2210, S-2220 e S-2240.</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px;">
+        <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
+          <h3 style="color:#00ffd0; margin-bottom:8px;">eSocial SST</h3>
+          <p style="color:#ffffff; line-height:1.5;">Envio, conferência e acompanhamento técnico dos eventos S-2210, S-2220 e S-2240.</p>
+        </div>
+
+        <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
+          <h3 style="color:#00ffd0; margin-bottom:8px;">PGR, PCMSO, LTCAT e PPP</h3>
+          <p style="color:#ffffff; line-height:1.5;">Elaboração, revisão e atualização da documentação obrigatória da empresa.</p>
+        </div>
+
+        <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
+          <h3 style="color:#00ffd0; margin-bottom:8px;">Exames Ocupacionais</h3>
+          <p style="color:#ffffff; line-height:1.5;">Gestão de exames admissionais, periódicos, retorno ao trabalho, mudança de função e demissionais.</p>
+        </div>
+
+        <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
+          <h3 style="color:#00ffd0; margin-bottom:8px;">Consultoria em NRs</h3>
+          <p style="color:#ffffff; line-height:1.5;">Suporte técnico para adequação às normas regulamentadoras e prevenção de riscos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#0d2323,#102f2f); border:1px solid #1d5c5c; border-radius:22px; padding:25px; margin-bottom:25px;">
+      <h2 style="color:#ffffff; font-size:30px; margin-bottom:18px;">Atendimento Rápido</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px;">
+        <a href="https://wa.me/551433224141?text=Olá%2C%20vim%20pelo%20site%20da%20Globalled%20SST%20e%20quero%20solicitar%20um%20atendimento." target="_blank" style="display:block; text-decoration:none; background:#00d8a6; color:#062222; font-weight:bold; padding:16px; border-radius:14px; text-align:center;">
+          Solicitar atendimento
+        </a>
+
+        <a href="https://wa.me/551433224141?text=Olá%2C%20quero%20regularizar%20documentos%20da%20minha%20empresa." target="_blank" style="display:block; text-decoration:none; background:#0f2b2b; color:#ffffff; border:1px solid #2c7777; padding:16px; border-radius:14px; text-align:center;">
+          Regularizar documentos
+        </a>
+
+        <a href="https://wa.me/551433224141?text=Olá%2C%20preciso%20de%20ajuda%20com%20eSocial%20SST." target="_blank" style="display:block; text-decoration:none; background:#0f2b2b; color:#ffffff; border:1px solid #2c7777; padding:16px; border-radius:14px; text-align:center;">
+          Ajuda com eSocial
+        </a>
+
+        <a href="https://wa.me/551433224141?text=Olá%2C%20gostaria%20de%20agendar%20um%20orçamento." target="_blank" style="display:block; text-decoration:none; background:#0f2b2b; color:#ffffff; border:1px solid #2c7777; padding:16px; border-radius:14px; text-align:center;">
+          Pedir orçamento
+        </a>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#0b1d1d,#143838); border:1px solid #1d5c5c; border-radius:22px; padding:25px; margin-bottom:25px;">
+      <h2 style="color:#ffffff; font-size:30px; margin-bottom:10px;">Pré-Atendimento Inteligente</h2>
+      <p style="color:#d6f4f4; line-height:1.6; margin-bottom:20px;">
+        Preencha as informações abaixo e envie direto pelo WhatsApp. Assim o atendimento fica mais rápido e mais organizado.
+      </p>
+
+      <form onsubmit="enviarWhatsapp(event)" style="display:grid; gap:14px;">
+        <input type="text" id="nome" placeholder="Seu nome" required
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+
+        <input type="text" id="empresa" placeholder="Nome da empresa" required
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+
+        <input type="text" id="cidade" placeholder="Cidade"
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+
+        <input type="text" id="funcionarios" placeholder="Quantidade de funcionários"
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+
+        <select id="servico"
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+          <option value="">Serviço desejado</option>
+          <option>eSocial SST</option>
+          <option>PGR</option>
+          <option>PCMSO</option>
+          <option>LTCAT</option>
+          <option>PPP</option>
+          <option>Exames ocupacionais</option>
+          <option>Treinamentos</option>
+          <option>Consultoria em NRs</option>
+        </select>
+
+        <div id="camposExames" style="display:none; gap:14px;">
+          <input type="text" id="cnpj" placeholder="CNPJ da empresa"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <input type="text" id="responsavel" placeholder="Nome do responsável"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <input type="text" id="whatsResponsavel" placeholder="WhatsApp do responsável"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <input type="text" id="colaboradores" placeholder="Nome do colaborador ou lista de colaboradores"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <input type="text" id="qtdColaboradores" placeholder="Quantidade de colaboradores"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <select id="tipoExame"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+            <option value="">Tipo de exame</option>
+            <option>Admissional</option>
+            <option>Periódico</option>
+            <option>Retorno ao trabalho</option>
+            <option>Mudança de função</option>
+            <option>Demissional</option>
+          </select>
+
+          <input type="text" id="funcaoColaborador" placeholder="Função do colaborador"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <input type="text" id="unidadeCidade" placeholder="Cidade / unidade de atendimento"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <input type="text" id="dataDesejada" placeholder="Data desejada para agendamento"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%;">
+
+          <textarea id="obsExame" placeholder="Observações adicionais"
+            style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff; width:100%; min-height:100px;"></textarea>
+        </div>
+
+        <select id="pgr"
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+          <option value="">Possui PGR atualizado?</option>
+          <option>Sim</option>
+          <option>Não</option>
+          <option>Não sei</option>
+        </select>
+
+        <select id="pcmso"
+          style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
+          <option value="">Possui PCMSO atualizado?</option>
+          <option>Sim</option>
+          <option>Não</option>
+          <option>Não sei</option>
+        </select>
+
+        <button type="submit"
+          style="background:#00e0ae; color:#042222; font-weight:bold; border:none; padding:16px; border-radius:14px; cursor:pointer; font-size:16px;">
+          Enviar pelo WhatsApp
+        </button>
+      </form>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#0c2020,#123131); border:1px solid #1d5c5c; border-radius:22px; padding:25px;">
+      <h2 style="color:#ffffff; font-size:30px; margin-bottom:18px;">Dúvidas Frequentes</h2>
+
+      <div style="margin-bottom:15px;">
+        <h3 style="color:#00ffd0; margin-bottom:6px;">Minha empresa precisa ter PGR?</h3>
+        <p style="color:#ffffff; line-height:1.6;">Em muitos casos, sim. O PGR é parte essencial da gestão de riscos ocupacionais e deve estar compatível com a realidade da empresa.</p>
       </div>
 
-      <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
-        <h3 style="color:#00ffd0; margin-bottom:8px;">PGR, PCMSO, LTCAT e PPP</h3>
-        <p style="color:#ffffff; line-height:1.5;">Elaboração, revisão e atualização da documentação obrigatória da empresa.</p>
+      <div style="margin-bottom:15px;">
+        <h3 style="color:#00ffd0; margin-bottom:6px;">Vocês auxiliam com eSocial SST?</h3>
+        <p style="color:#ffffff; line-height:1.6;">Sim. Fazemos conferência, suporte e orientação técnica sobre os eventos relacionados à SST.</p>
       </div>
 
-      <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
-        <h3 style="color:#00ffd0; margin-bottom:8px;">Exames Ocupacionais</h3>
-        <p style="color:#ffffff; line-height:1.5;">Gestão de exames admissionais, periódicos, retorno ao trabalho, mudança de função e demissionais.</p>
+      <div style="margin-bottom:15px;">
+        <h3 style="color:#00ffd0; margin-bottom:6px;">Atendem somente Ourinhos ou outras regiões?</h3>
+        <p style="color:#ffffff; line-height:1.6;">Atendemos empresas em Ourinhos e região, com atuação em todo o Brasil por meio de parcerias com profissionais e empresas especializadas, garantindo suporte técnico completo em qualquer localidade.</p>
       </div>
 
-      <div style="background:#0f2b2b; border:1px solid #245f5f; border-radius:16px; padding:18px;">
-        <h3 style="color:#00ffd0; margin-bottom:8px;">Consultoria em NRs</h3>
-        <p style="color:#ffffff; line-height:1.5;">Suporte técnico para adequação às normas regulamentadoras e prevenção de riscos.</p>
+      <div>
+        <h3 style="color:#00ffd0; margin-bottom:6px;">Posso solicitar orçamento pelo site?</h3>
+        <p style="color:#ffffff; line-height:1.6;">Sim. Você pode chamar direto no WhatsApp ou preencher o pré-atendimento para agilizar a análise.</p>
       </div>
     </div>
-  </div>
 
-  <!-- ATALHOS -->
-  <div style="background:linear-gradient(135deg,#0d2323,#102f2f); border:1px solid #1d5c5c; border-radius:22px; padding:25px; margin-bottom:25px;">
-    <h2 style="color:#ffffff; font-size:30px; margin-bottom:18px;">Atendimento Rápido</h2>
+  </section>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px;">
-      <a href="https://wa.me/551433224141?text=Olá%2C%20vim%20pelo%20site%20da%20Globalled%20SST%20e%20quero%20solicitar%20um%20atendimento." target="_blank" style="display:block; text-decoration:none; background:#00d8a6; color:#062222; font-weight:bold; padding:16px; border-radius:14px; text-align:center;">
-        Solicitar atendimento
-      </a>
-
-      <a href="https://wa.me/551433224141?text=Olá%2C%20quero%20regularizar%20documentos%20da%20minha%20empresa." target="_blank" style="display:block; text-decoration:none; background:#0f2b2b; color:#ffffff; border:1px solid #2c7777; padding:16px; border-radius:14px; text-align:center;">
-        Regularizar documentos
-      </a>
-
-      <a href="https://wa.me/551433224141?text=Olá%2C%20preciso%20de%20ajuda%20com%20eSocial%20SST." target="_blank" style="display:block; text-decoration:none; background:#0f2b2b; color:#ffffff; border:1px solid #2c7777; padding:16px; border-radius:14px; text-align:center;">
-        Ajuda com eSocial
-      </a>
-
-      <a href="https://wa.me/551433224141?text=Olá%2C%20gostaria%20de%20agendar%20um%20orçamento." target="_blank" style="display:block; text-decoration:none; background:#0f2b2b; color:#ffffff; border:1px solid #2c7777; padding:16px; border-radius:14px; text-align:center;">
-        Pedir orçamento
-      </a>
-    </div>
-  </div>
-
-  <!-- FORMULÁRIO INTELIGENTE -->
-  <div style="background:linear-gradient(135deg,#0b1d1d,#143838); border:1px solid #1d5c5c; border-radius:22px; padding:25px; margin-bottom:25px;">
-    <h2 style="color:#ffffff; font-size:30px; margin-bottom:10px;">Pré-Atendimento Inteligente</h2>
-    <p style="color:#d6f4f4; line-height:1.6; margin-bottom:20px;">
-      Preencha as informações abaixo e envie direto pelo WhatsApp. Assim o atendimento fica mais rápido e mais organizado.
-    </p>
-
-    <form onsubmit="enviarWhatsapp(event)" style="display:grid; gap:14px;">
-      <input type="text" id="nome" placeholder="Seu nome" required
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-
-      <input type="text" id="empresa" placeholder="Nome da empresa" required
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-
-      <input type="text" id="cidade" placeholder="Cidade"
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-
-      <input type="text" id="funcionarios" placeholder="Quantidade de funcionários"
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-
-      <select id="servico"
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-        <option value="">Serviço desejado</option>
-        <option>eSocial SST</option>
-        <option>PGR</option>
-        <option>PCMSO</option>
-        <option>LTCAT</option>
-        <option>PPP</option>
-        <option>Exames ocupacionais</option>
-        <option>Treinamentos</option>
-        <option>Consultoria em NRs</option>
-      </select>
-
-      <select id="pgr"
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-        <option value="">Possui PGR atualizado?</option>
-        <option>Sim</option>
-        <option>Não</option>
-        <option>Não sei</option>
-      </select>
-
-      <select id="pcmso"
-        style="padding:14px; border-radius:12px; border:1px solid #2c7777; background:#081616; color:#fff;">
-        <option value="">Possui PCMSO atualizado?</option>
-        <option>Sim</option>
-        <option>Não</option>
-        <option>Não sei</option>
-      </select>
-
-      <button type="submit"
-        style="background:#00e0ae; color:#042222; font-weight:bold; border:none; padding:16px; border-radius:14px; cursor:pointer; font-size:16px;">
-        Enviar pelo WhatsApp
-      </button>
-    </form>
-  </div>
-
-  <!-- FAQ -->
-  <div style="background:linear-gradient(135deg,#0c2020,#123131); border:1px solid #1d5c5c; border-radius:22px; padding:25px;">
-    <h2 style="color:#ffffff; font-size:30px; margin-bottom:18px;">Dúvidas Frequentes</h2>
-
-    <div style="margin-bottom:15px;">
-      <h3 style="color:#00ffd0; margin-bottom:6px;">Minha empresa precisa ter PGR?</h3>
-      <p style="color:#ffffff; line-height:1.6;">Em muitos casos, sim. O PGR é parte essencial da gestão de riscos ocupacionais e deve estar compatível com a realidade da empresa.</p>
-    </div>
-
-    <div style="margin-bottom:15px;">
-      <h3 style="color:#00ffd0; margin-bottom:6px;">Vocês auxiliam com eSocial SST?</h3>
-      <p style="color:#ffffff; line-height:1.6;">Sim. Fazemos conferência, suporte e orientação técnica sobre os eventos relacionados à SST.</p>
-    </div>
-
-    <div style="margin-bottom:15px;">
-      <h3 style="color:#00ffd0; margin-bottom:6px;">Atendem somente Ourinhos?</h3>
-      <p style="color:#ffffff; line-height:1.6;">O atendimento pode ser ajustado conforme a necessidade da empresa. O ideal é entrar em contato para analisar seu caso.</p>
-    </div>
-
-    <div>
-      <h3 style="color:#00ffd0; margin-bottom:6px;">Posso solicitar orçamento pelo site?</h3>
-      <p style="color:#ffffff; line-height:1.6;">Sim. Você pode chamar direto no WhatsApp ou preencher o pré-atendimento para agilizar a análise.</p>
-    </div>
-  </div>
-
-</section>
-
-<script>
-  function enviarWhatsapp(event) {
-    event.preventDefault();
-
-    const nome = document.getElementById('nome').value;
-    const empresa = document.getElementById('empresa').value;
-    const cidade = document.getElementById('cidade').value;
-    const funcionarios = document.getElementById('funcionarios').value;
-    const servico = document.getElementById('servico').value;
-    const pgr = document.getElementById('pgr').value;
-    const pcmso = document.getElementById('pcmso').value;
-
-    const mensagem =
-      "Olá, vim pelo site da Globalled SST.%0A%0A" +
-      "Pré-atendimento:%0A" +
-      "Nome: " + nome + "%0A" +
-      "Empresa: " + empresa + "%0A" +
-      "Cidade: " + cidade + "%0A" +
-      "Funcionários: " + funcionarios + "%0A" +
-      "Serviço desejado: " + servico + "%0A" +
-      "PGR atualizado: " + pgr + "%0A" +
-      "PCMSO atualizado: " + pcmso;
-
-    let numeroDestino = "551433224141"; // seu número principal
-
-if (servico === "Exames ocupacionais") {
-  numeroDestino = "55DDDNUMEROSECRETARIA"; // número da secretária
-}
-
-window.open("https://wa.me/" + numeroDestino + "?text=" + mensagem, "_blank");
-  }
-</script><section>
+  <section>
     <h2>Estrutura e Fotos</h2>
     <div class="grid grid3 gal">
       <img src="img/foto1.jpg" alt="Estrutura 1">
@@ -286,5 +306,91 @@ window.open("https://wa.me/" + numeroDestino + "?text=" + mensagem, "_blank");
 <footer>
   <div class="wrap">© 2025 GLOBALLED SST — Todos os direitos reservados</div>
 </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const servico = document.getElementById("servico");
+    const camposExames = document.getElementById("camposExames");
+    const pgr = document.getElementById("pgr");
+    const pcmso = document.getElementById("pcmso");
+
+    function atualizarCamposExames() {
+      if (servico.value === "Exames ocupacionais") {
+        camposExames.style.display = "grid";
+        pgr.style.display = "none";
+        pcmso.style.display = "none";
+      } else {
+        camposExames.style.display = "none";
+        pgr.style.display = "block";
+        pcmso.style.display = "block";
+      }
+    }
+
+    servico.addEventListener("change", atualizarCamposExames);
+    atualizarCamposExames();
+  });
+
+  function enviarWhatsapp(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const empresa = document.getElementById('empresa').value;
+    const cidade = document.getElementById('cidade').value;
+    const funcionarios = document.getElementById('funcionarios').value;
+    const servico = document.getElementById('servico').value;
+    const pgr = document.getElementById('pgr').value;
+    const pcmso = document.getElementById('pcmso').value;
+
+    const cnpj = document.getElementById('cnpj').value;
+    const responsavel = document.getElementById('responsavel').value;
+    const whatsResponsavel = document.getElementById('whatsResponsavel').value;
+    const colaboradores = document.getElementById('colaboradores').value;
+    const qtdColaboradores = document.getElementById('qtdColaboradores').value;
+    const tipoExame = document.getElementById('tipoExame').value;
+    const funcaoColaborador = document.getElementById('funcaoColaborador').value;
+    const unidadeCidade = document.getElementById('unidadeCidade').value;
+    const dataDesejada = document.getElementById('dataDesejada').value;
+    const obsExame = document.getElementById('obsExame').value;
+
+    let numeroDestino = "551433224141";
+    let mensagem = "";
+
+    if (servico === "Exames ocupacionais") {
+      numeroDestino = "55DDDNUMEROSECRETARIA";
+
+      mensagem =
+        "Olá, vim pelo site da Globalled SST.%0A%0A" +
+        "AGENDAMENTO DE EXAME OCUPACIONAL%0A%0A" +
+        "Nome do solicitante: " + nome + "%0A" +
+        "Empresa: " + empresa + "%0A" +
+        "CNPJ: " + cnpj + "%0A" +
+        "Responsável: " + responsavel + "%0A" +
+        "WhatsApp do responsável: " + whatsResponsavel + "%0A" +
+        "Cidade: " + cidade + "%0A" +
+        "Quantidade de funcionários da empresa: " + funcionarios + "%0A" +
+        "Quantidade de colaboradores para exame: " + qtdColaboradores + "%0A" +
+        "Nome do colaborador / colaboradores: " + colaboradores + "%0A" +
+        "Tipo de exame: " + tipoExame + "%0A" +
+        "Função do colaborador: " + funcaoColaborador + "%0A" +
+        "Unidade / cidade de atendimento: " + unidadeCidade + "%0A" +
+        "Data desejada: " + dataDesejada + "%0A" +
+        "Observações: " + obsExame;
+
+    } else {
+      mensagem =
+        "Olá, vim pelo site da Globalled SST.%0A%0A" +
+        "PRÉ-ATENDIMENTO%0A%0A" +
+        "Nome: " + nome + "%0A" +
+        "Empresa: " + empresa + "%0A" +
+        "Cidade: " + cidade + "%0A" +
+        "Funcionários: " + funcionarios + "%0A" +
+        "Serviço desejado: " + servico + "%0A" +
+        "PGR atualizado: " + pgr + "%0A" +
+        "PCMSO atualizado: " + pcmso;
+    }
+
+    window.open("https://wa.me/" + numeroDestino + "?text=" + mensagem, "_blank");
+  }
+</script>
 </body>
 </html>
