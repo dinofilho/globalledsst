@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posto do Papel LTDA | Empresa Parceira GLOBALLED SST</title>
+  <meta name="description" content="Posto do Papel LTDA em Telêmaco Borba/PR. Combustível de alta qualidade, ótimo atendimento e conveniência completa.">
+  <style>
+    :root{
+      --verde:#19b79a;
+      --verde2:#00d8a6;
+      --escuro:#0f2f2b;
+      --fundo:#081616;
+      --card:#102727;
+      --borda:#245f5f;
+      --texto:#ffffff;
+      --texto2:#d7f3ee;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(135deg,#071313,#0d2323);
+      color:var(--texto);
+    }
+    .wrap{max-width:1100px;margin:auto;padding:18px}
+    .hero{
+      background:linear-gradient(135deg,#0b1f1f,#123535);
+      border:1px solid var(--borda);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 0 20px rgba(0,0,0,.25);
+    }
+    .hero img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+      display:block;
+    }
+    .hero-content{padding:24px}
+    h1{margin:0 0 8px 0;font-size:clamp(28px,5vw,42px)}
+    h2{font-size:clamp(22px,4vw,30px);margin:0 0 12px 0}
+    p{margin:0 0 12px 0}
+    .sub{color:var(--texto2);font-size:18px}
+    .actions{
+      display:flex;flex-wrap:wrap;gap:12px;margin-top:18px
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      border-radius:14px;
+      padding:14px 18px;
+      font-weight:700;
+      transition:.2s;
+    }
+    .btn-primary{
+      background:var(--verde2);
+      color:#062222;
+    }
+    .btn-secondary{
+      background:#0f2b2b;
+      color:#fff;
+      border:1px solid #2c7777;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
+      margin-top:24px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--borda);
+      border-radius:22px;
+      padding:22px;
+    }
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+      margin-top:18px;
+    }
+    .galeria img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:18px;
+      border:1px solid #2c7777;
+      display:block;
+      background:#0b1f1f;
+    }
+    form{
+      display:grid;
+      gap:14px;
+      margin-top:12px;
+    }
+    input, textarea, select{
+      width:100%;
+      padding:14px;
+      border-radius:14px;
+      border:1px solid #2c7777;
+      background:#081616;
+      color:#fff;
+      font:inherit;
+    }
+    textarea{min-height:110px;resize:vertical}
+    .top-link{
+      display:inline-block;
+      margin-bottom:16px;
+      color:#9ff3e1;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .badge{
+      display:inline-block;
+      background:#123b36;
+      color:#9ff3e1;
+      border:1px solid #2b7c71;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    footer{
+      margin-top:28px;
+      padding:20px;
+      text-align:center;
+      color:#a9d8cf;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="top-link" href="../index.html">← Voltar para GLOBALLED SST</a>
+
+    <section class="hero">
+      <img src="../img/posto-papel-fachada.jpg" alt="Fachada do Posto do Papel LTDA">
+      <div class="hero-content">
+        <span class="badge">Empresa Parceira GLOBALLED SST</span>
+        <h1>Posto do Papel LTDA</h1>
+        <p class="sub">Telêmaco Borba • Paraná</p>
+        <p>
+          O <strong>Posto do Papel LTDA</strong> é um posto bandeira branca localizado em Telêmaco Borba/PR,
+          reconhecido pela qualidade no atendimento, combustíveis de alta qualidade e uma conveniência completa,
+          repleta de variedades para melhor atender seus clientes.
+        </p>
+        <p>
+          Atendimento rápido, ambiente confiável e compromisso com a satisfação de quem busca praticidade,
+          qualidade e bom serviço em um só lugar.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/554232721881?text=Olá%2C%20vim%20pela%20página%20do%20Posto%20do%20Papel%20e%20quero%20atendimento." target="_blank">
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-secondary" href="tel:+554232721881">
+            Ligar agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Informações</h2>
+        <p><strong>Empresa:</strong> Posto do Papel LTDA</p>
+        <p><strong>Cidade:</strong> Telêmaco Borba – PR</p>
+        <p><strong>Categoria:</strong> Posto de Combustível / Conveniência</p>
+        <p><strong>Perfil:</strong> Posto bandeira branca</p>
+        <p><strong>WhatsApp:</strong> (42) 3272-1881</p>
+      </section>
+
+      <section class="card">
+        <h2>Destaques</h2>
+        <p>✔ Combustível de alta qualidade</p>
+        <p>✔ Ótimo atendimento ao cliente</p>
+        <p>✔ Conveniência com variedades</p>
+        <p>✔ Atendimento rápido e prático</p>
+        <p>✔ Empresa parceira da GLOBALLED SST</p>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:24px;">
+      <h2>Produtos e Estrutura</h2>
+      <p>
+        Conheça um pouco da estrutura, dos produtos e da conveniência do Posto do Papel.
+      </p>
+
+      <div class="galeria">
+        <img src="../img/posto-papel-1.jpg" alt="Estrutura do Posto do Papel">
+        <img src="../img/posto-papel-2.jpg" alt="Atendimento do Posto do Papel">
+        <img src="../img/posto-papel-3.jpg" alt="Produto do Posto do Papel">
+        <img src="../img/posto-papel-4.jpg" alt="Conveniência do Posto do Papel">
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:24px;">
+      <h2>Atendimento Inteligente</h2>
+      <p>
+        Descreva abaixo o que você precisa. Ao clicar no botão, sua solicitação será enviada
+        direto para o WhatsApp do Posto do Papel.
+      </p>
+
+      <form onsubmit="enviarWhatsapp(event)">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="text" id="telefone" placeholder="Seu telefone ou WhatsApp">
+        <input type="text" id="endereco" placeholder="Seu endereço ou localização">
+        
+        <select id="tipo">
+          <option value="">Selecione o tipo de atendimento</option>
+          <option>Informações sobre combustíveis</option>
+          <option>Informações sobre conveniência</option>
+          <option>Consulta de produtos</option>
+          <option>Atendimento geral</option>
+          <option>Outro assunto</option>
+        </select>
+
+        <textarea id="pedido" placeholder="Descreva seu pedido ou sua necessidade" required></textarea>
+
+        <button class="btn btn-primary" type="submit" style="border:none;cursor:pointer;">
+          Enviar pedido no WhatsApp
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      © 2026 • Posto do Papel LTDA • Empresa parceira GLOBALLED SST
+    </footer>
+  </div>
+
+  <script>
+    function enviarWhatsapp(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const endereco = document.getElementById("endereco").value;
+      const tipo = document.getElementById("tipo").value;
+      const pedido = document.getElementById("pedido").value;
+
+      const numero = "554232721881";
+
+      const mensagem =
+        "Olá, vim pela página do Posto do Papel LTDA.%0A%0A" +
+        "Nome: " + nome + "%0A" +
+        "Telefone: " + telefone + "%0A" +
+        "Endereço/Localização: " + endereco + "%0A" +
+        "Tipo de atendimento: " + tipo + "%0A" +
+        "Pedido/Descrição: " + pedido;
+
+      window.open("https://wa.me/" + numero + "?text=" + mensagem, "_blank");
+    }
+  </script>
+</body>
+</html>
