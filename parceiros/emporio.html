@@ -1,78 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Empório do Pescado | Empresas Parceiras GLOBALLED SST</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empório do Pescado | Empresa Parceira GLOBALLED SST</title>
 
-<style>
-  body{
-    margin:0;
-    font-family:system-ui;
-    background:linear-gradient(135deg,#071313,#0d2323);
-    color:#fff;
-  }
+  <style>
+    :root{
+      --verde:#19b79a;
+      --verde2:#00d8a6;
+      --escuro:#0f2f2b;
+      --fundo:#081616;
+      --card:#102727;
+      --borda:#245f5f;
+      --texto:#ffffff;
+      --texto2:#d7f3ee;
+    }
 
-  .wrap{max-width:1000px;margin:auto;padding:20px}
+    *{box-sizing:border-box}
 
-  .card{
-    border:1px solid #245f5f;
-    border-radius:20px;
-    overflow:hidden;
-  }
+    body{
+      margin:0;
+      font:16px/1.5 system-ui;
+      background:linear-gradient(135deg,#071313,#0d2323);
+      color:#fff;
+    }
 
-  .card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-  }
+    .wrap{max-width:1100px;margin:auto;padding:18px}
 
-  .content{padding:20px}
+    a{color:#00ffd0;text-decoration:none}
 
-  h1{margin:0 0 10px}
-  
-  .btn{
-    display:inline-block;
-    padding:12px 16px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:10px;
-  }
+    .hero{
+      border:1px solid #245f5f;
+      border-radius:24px;
+      overflow:hidden;
+    }
 
-  .btn-primary{
-    background:#00d8a6;
-    color:#000;
-  }
+    .hero img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
 
-</style>
+    .hero-content{padding:20px}
+
+    h1{margin:0 0 10px}
+
+    .btn{
+      display:inline-block;
+      padding:12px 16px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:10px;
+    }
+
+    .btn-primary{
+      background:#00d8a6;
+      color:#000;
+    }
+
+    .btn-secondary{
+      background:#102727;
+      border:1px solid #2c7777;
+      color:#fff;
+    }
+
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:12px;
+      margin-top:20px;
+    }
+
+    .galeria img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:12px;
+    }
+
+    .mapa{
+      width:100%;
+      height:300px;
+      border-radius:12px;
+      margin-top:20px;
+      border:0;
+    }
+  </style>
 </head>
 
 <body>
 
 <div class="wrap">
 
-<a href="../index.html" style="color:#9ff3e1;">← Voltar</a>
+<a href="../index.html">← Voltar</a>
 
-<!-- EMPRESA -->
-<div class="card">
+<!-- CAPA -->
+<section class="hero">
   <img src="../img/Gazola-1.jpg">
 
-  <div class="content">
+  <div class="hero-content">
     <h1>Gazola Empório do Pescado</h1>
-    <p>Ourinhos - SP</p>
+    <p>Santa Cruz do Rio Pardo - SP</p>
 
     <p>
-      Especializada em pescados frescos e congelados, oferecendo qualidade,
-      variedade e atendimento diferenciado para seus clientes.
+      Especializada em pescados frescos e congelados,
+      oferecendo qualidade, variedade e atendimento diferenciado
+      para seus clientes.
     </p>
+
+    <p><b>Endereço:</b> Rua Joaquim Dias Machado, nº 110</p>
 
     <a class="btn btn-primary" href="https://wa.me/5514997821544" target="_blank">
       Falar no WhatsApp
     </a>
 
+    <a class="btn btn-secondary" href="tel:+5514997821544">
+      Ligar
+    </a>
+
   </div>
+</section>
+
+<!-- GALERIA -->
+<h2>Estrutura e Produtos</h2>
+
+<div class="galeria">
+  <img src="../img/Gazola-1.jpg">
+  <img src="../img/foto1.jpg">
+  <img src="../img/foto2.jpg">
+  <img src="../img/foto3.jpg">
 </div>
+
+<!-- MAPA -->
+<h2>Localização</h2>
+
+<iframe class="mapa"
+src="https://www.google.com/maps?q=Rua%20Joaquim%20Dias%20Machado%2C%20110%20Santa%20Cruz%20do%20Rio%20Pardo%20SP&output=embed">
+</iframe>
 
 </div>
 
