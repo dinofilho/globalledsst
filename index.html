@@ -865,9 +865,12 @@ function fecharLoginSST() {
   document.getElementById("loginModalSST").style.display = "none";
 }
 
-function entrarSST() {
-  const usuario = document.getElementById("sstUser").value.trim();
-  const senha = document.getElementById("sstPass").value.trim();
+function abrirLoginSST() {
+  const usuario = prompt("Usuário:");
+  if (!usuario) return;
+
+  const senha = prompt("Senha:");
+  if (!senha) return;
 
   if (usuario === "saude" && senha === "4321") {
     window.location.href = "https://dinofilho.github.io/sst-sistema/";
