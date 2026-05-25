@@ -857,7 +857,17 @@ box-shadow:0 0 20px rgba(255,0,80,0.35);
 
     window.open("https://wa.me/" + numeroDestino + "?text=" + mensagem, "_blank");
   }
-</script>
+function loginSST() {
+  const usuario = prompt("Usuário:");
+  const senha = prompt("Senha:");
+
+  if (usuario === "saude" && senha === "4321") {
+    window.open("https://dinofilho.github.io/sst-sistema/", "_blank");
+  } else {
+    alert("Usuário ou senha inválidos.");
+  }
+}
+
  </script>
 
 
