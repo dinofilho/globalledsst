@@ -857,12 +857,20 @@ box-shadow:0 0 20px rgba(255,0,80,0.35);
 
     window.location.href = "https://dinofilho.github.io/sst-sistema/";
   }
-function loginSST() {
-  const usuario = prompt("Usuário:");
-  const senha = prompt("Senha:");
+function abrirLoginSST() {
+  document.getElementById("loginModalSST").style.display = "flex";
+}
+
+function fecharLoginSST() {
+  document.getElementById("loginModalSST").style.display = "none";
+}
+
+function entrarSST() {
+  const usuario = document.getElementById("sstUser").value.trim();
+  const senha = document.getElementById("sstPass").value.trim();
 
   if (usuario === "saude" && senha === "4321") {
-    window.open("https://dinofilho.github.io/sst-sistema/", "_blank");
+    window.location.href = "https://dinofilho.github.io/sst-sistema/";
   } else {
     alert("Usuário ou senha inválidos.");
   }
